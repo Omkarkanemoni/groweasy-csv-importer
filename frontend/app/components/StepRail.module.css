@@ -1,0 +1,66 @@
+.rail {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+}
+
+.num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--ink-soft);
+  background: var(--surface);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.active .num {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+}
+
+.done .num {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+}
+
+.active {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.done {
+  color: var(--ink-soft);
+}
+
+.connector {
+  width: 28px;
+  height: 1.5px;
+  background: var(--border-strong);
+  margin: 0 8px;
+}
+
+.connectorDone {
+  background: var(--accent);
+}
